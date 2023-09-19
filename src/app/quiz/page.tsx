@@ -97,7 +97,7 @@ export default function PageQuiz() {
                                                 onClick={()=>nextQuestionHandler()}
                                                 >
                     
-                    Next
+                    Próxima
                 </button>
                 </div>
                 </div>
@@ -117,7 +117,7 @@ export default function PageQuiz() {
                                                 onClick={() => router.push("/")}
                                                 >
                     
-                Restart
+                Reiniciar
             </button>
             </div>
                 </div>

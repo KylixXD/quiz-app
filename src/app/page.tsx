@@ -50,7 +50,7 @@ export default function Home() {
               placeholder="Email"/>
           </div>
             <button type="submit" className="bg-orange-400 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-full">
-              Start Quiz
+              Começar o Quiz
             </button>
         </form>
       </div>
