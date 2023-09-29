@@ -4,6 +4,7 @@
 import { FormEventHandler, useState } from "react"
 import { useRouter } from 'next/navigation'
 import { useGlobalContext } from "@/context/main";
+import Link from "next/link";
 
 
 
@@ -16,8 +17,13 @@ export default function Home() {
 
   const router = useRouter();
 
-  const handleSubmitIniciar:FormEventHandler<HTMLFormElement> = (e) => {
+  const handleSubmitIniciar:FormEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
+
+    const { url } = await fetch("http://localhost:3000/api/user", {
+      method: "POST",
+      body: JSON.stringify({ email: newEmail, name: newName }),
+    });
     router.push("/quiz");
   }
 
@@ -52,14 +58,13 @@ export default function Home() {
             <button type="submit" className="bg-orange-400 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-full">
               Começar o Quiz
             </button>
+            <Link href="/newQuestion">
+              <button type="submit" className="bg-orange-400 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-full my-5">
+                Cadastrar Questão
+              </button>
+            </Link>
         </form>
       </div>
-
-      {/* <Link href="/quiz">
-        <button className="bg-orange-400 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-full">
-          Start Quiz
-        </button>
-      </Link> */}
         
     </main>
   )
