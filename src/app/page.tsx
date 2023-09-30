@@ -40,6 +40,7 @@ export default function Home() {
               type="text" 
               name="newName" 
               id="newName" 
+              required
               value={newName}
               onChange={(e) => setNewName(e.target.value)}
               placeholder="Nome"/>
@@ -51,6 +52,7 @@ export default function Home() {
               type="email" 
               name="newEmail" 
               id="newEmail" 
+              required
               value={newEmail}
               onChange={(e) => setNewEmail(e.target.value)}
               placeholder="Email"/>
