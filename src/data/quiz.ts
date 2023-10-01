@@ -1,6 +1,6 @@
 export const quiz = {
   subject: "Estrutura de Dados",
-  totalQuestions: 6,
+  totalQuestions: 7,
   questions: [
     {
       id: 1,
@@ -43,6 +43,13 @@ export const quiz = {
         "Qual estrutura de dados é definida pela regra: FIFO (First In, First Out)?",
       answers: ["Pilha", "Fila", "Arvore", "Lista"],
       correctAnswer: "Fila",
+    },
+    {
+      id: 7,
+      question:
+        "Qual é o algoritmo de ordenção que tem como ideia 'percorrer um conjunto de elementos diversas vezes, e a cada passagem fazer flutuar para o topo o maior elemento da sequência.' ?",
+      answers: ["Selection sort", "Bubble sort", "Insertion sort", "Bogo sort"],
+      correctAnswer: "Bubble sort",
     },
   ],
 };
