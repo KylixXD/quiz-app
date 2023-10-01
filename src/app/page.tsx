@@ -1,4 +1,3 @@
-
 'use client'
 
 import { FormEventHandler, useState } from "react"
@@ -9,9 +8,6 @@ import Link from "next/link";
 
 
 export default function Home() {
-
-  // const [newName, setNewName] = useState("");
-  // const [newEmail, setNewEmail] = useState("");
 
   const {newName, setNewName, newEmail ,setNewEmail} = useGlobalContext()
 

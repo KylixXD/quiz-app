@@ -1,6 +1,6 @@
 export const quiz = {
   subject: "Estrutura de Dados",
-  totalQuestions: 5,
+  totalQuestions: 6,
   questions: [
     {
       id: 1,
@@ -36,6 +36,13 @@ export const quiz = {
         "Qual das alternativas a seguir NÃO é uma operação comum em uma estrutura de dados de fila?",
       answers: ["Enqueue", "Dequeue", "Peek", "Shuffle"],
       correctAnswer: "Shuffle",
+    },
+    {
+      id: 6,
+      question:
+        "Qual estrutura de dados é definida pela regra: FIFO (First In, First Out)?",
+      answers: ["Pilha", "Fila", "Arvore", "Lista"],
+      correctAnswer: "Fila",
     },
   ],
 };

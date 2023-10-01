@@ -79,7 +79,7 @@ export default function PageQuiz() {
                                             `bg-transparent hover:bg-blue-500
                                              text-blue-700 font-semibold hover:text-white 
                                             py-2 px-4 border border-blue-500 
-                                            hover:border-transparent rounded
+                                            hover:border-transparent rounded 
                                             ${ selectedAnswerIndex === idx ? "bg-blue-600 text-white": ""}`
                                             } 
                                 onClick={() => onAnswerSelected(answer, idx)}
@@ -92,7 +92,7 @@ export default function PageQuiz() {
                 <button disabled={!checked} className={`
                                                 bg-gray-400  text-white font-bold 
                                                 py-2 px-4 rounded-full select-none
-                                                ${checked ? "hover:bg-gray-600" : "bg-gray-200 cursor-not-allowed"}
+                                                ${checked ? "hover:bg-blue-600" : "bg-gray-200 cursor-not-allowed"}
                                                 `}
                                                 onClick={()=>nextQuestionHandler()}
                                                 >
